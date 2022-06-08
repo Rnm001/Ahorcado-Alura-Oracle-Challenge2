@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html Lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ahorcado</title>
+
+        <Link rel = "stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 id="h1alura">lura</h1>
+        <img src="imagenes/vector.png" class="logo">
+        
+
+        <div id="menu-principal" class="menu">
+            <h1 id="h1ahorcado">Bienvenido al Ahorcado</h1>
+            <button type="button" id="boton-start" onclick="Comenzar();">Comenzar</button>
+            <button type="button" id="boton-agregar" onclick="agregarpalabras();">Agregar Palabra</button>
+            <section class="AgregaPalabras">
+				<input type="text" maxlength="8"  id="nuevaPalabra"  placeholder="Ingrese una palabra">
+            <section id="fondo-menu"></section>
+            <div class="subrayado"></div>
+            <h1 id="h1ganaste">Ganaste!!!</h1>
+            <h1 id="h1perdiste">Lo siento fuiste Ahorcado...</h1>
+        </div>
+
+        <div id="div-aparece-ahorcado" class="canvas">
+            <h1 id="h1jugando">A Jugar</h1>
+            <button type="button" id="boton_reiniciar" onclick="Restart();">Reiniciar</button>
+            <canvas id="horca" pattern="^[A-Za-z]+$" height="860px" width="1200"></canvas>
+            <div class="subrayado"></div>
+        </div>
+        <footer id=footer>
+            <p id=autor>Autor: Ricardo Michini para Alura Latam</p>
+            <p id=ref><a href="https://github.com/Rnm001">github</a></p>
+          </footer>
+    </body>
+
+    <script src="script.js"></script>
+
+
+</html>
